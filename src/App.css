@@ -1,0 +1,39 @@
+@reference "tailwindcss";
+
+#map-container {
+  margin: 40px auto;
+  background: #FFD000;
+  height: 800px;
+  width: 800px;
+  position: relative;
+  overflow: hidden;
+}
+
+#map-surface {
+  position: absolute;
+  background: #A3A2A1;
+  background-image: url(src/assets/map-img.png);
+  width: 1200px;
+  height: 1200px;
+  border: 3px solid #00C3FF
+}
+
+section {
+  width: 800px;
+  margin: 0 auto
+}
+
+button {
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: var(--color-accent-2);
+  padding: 4px 16px;
+  color: var(--color-text-main);
+  cursor: pointer;
+  font: small-caps bold 18px sans-serif;
+
+}
+
+button:hover {
+  background-color: --alpha(var(--color-accent-2)/ 90%);
+}
